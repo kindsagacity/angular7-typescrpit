@@ -1,6 +1,10 @@
 <div class="home-page">
 
+<<<<<<< HEAD
   <div class="banner" *appShowAuthed="false">
+=======
+  <div class="banner">
+>>>>>>> b6b70e6347c8fd052fcd0081678117c54212c5e8
     <div class="container">
       <h1 class="logo-font">conduit</h1>
       <p>A place to share your <i>Angular</i> knowledge.</p>
@@ -14,34 +18,30 @@
         <div class="feed-toggle">
           <ul class="nav nav-pills outline-active">
             <li class="nav-item">
-              <a class="nav-link"
-                 [ngClass]="{'active': listConfig.type === 'feed'}"
-                 (click)="setListTo('feed')">
+              <a class="nav-link">
                  Your Feed
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"
-                 [ngClass]="{'active': listConfig.type === 'all' && !listConfig.filters.tag}"
-                 (click)="setListTo('all')">
+              <a class="nav-link">
                  Global Feed
-              </a>
-            </li>
-            <li class="nav-item" [hidden]="!listConfig.filters.tag">
-              <a class="nav-link active">
-                <i class="ion-pound"></i> {{ listConfig.filters.tag }}
               </a>
             </li>
           </ul>
         </div>
 
+<<<<<<< HEAD
         <app-article-list [limit]="10" [config]="listConfig"></app-article-list>
+=======
+        
+>>>>>>> b6b70e6347c8fd052fcd0081678117c54212c5e8
       </div>
 
       <div class="col-md-3">
         <div class="sidebar">
           <p>Popular Tags</p>
 
+<<<<<<< HEAD
           <div class="tag-list">
             <a *ngFor="let tag of tags"
                (click)="setListTo('all', {tag: tag})"
@@ -57,6 +57,9 @@
           <div [hidden]="!tagsLoaded || tags.length > 0">
             No tags are here... yet.
           </div>
+=======
+
+>>>>>>> b6b70e6347c8fd052fcd0081678117c54212c5e8
         </div>
       </div>
 

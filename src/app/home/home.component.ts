@@ -1,13 +1,18 @@
+<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { ArticleListConfig, TagsService, UserService } from '../core';
+=======
+import { Component } from '@angular/core';
+>>>>>>> b6b70e6347c8fd052fcd0081678117c54212c5e8
 
 @Component({
   selector: 'app-home-page',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+<<<<<<< HEAD
 export class HomeComponent implements OnInit {
   constructor(
     private router: Router,
@@ -54,4 +59,9 @@ export class HomeComponent implements OnInit {
     // Otherwise, set the list object
     this.listConfig = {type: type, filters: filters};
   }
+=======
+export class HomeComponent {
+  constructor() {}
+
+>>>>>>> b6b70e6347c8fd052fcd0081678117c54212c5e8
 }

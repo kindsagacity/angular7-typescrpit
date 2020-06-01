@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
+<<<<<<< HEAD
 import { User, UserService } from '../../core';
 
+=======
+>>>>>>> b6b70e6347c8fd052fcd0081678117c54212c5e8
 @Component({
   selector: 'app-layout-header',
   templateUrl: './header.component.html'
 })
-export class HeaderComponent implements OnInit {
-  constructor(
-    private userService: UserService
-  ) {}
+export class HeaderComponent {
+  constructor() {}
 
-  currentUser: User;
-
+<<<<<<< HEAD
   ngOnInit() {
     this.userService.currentUser.subscribe(
       (userData) => {
@@ -20,4 +20,6 @@ export class HeaderComponent implements OnInit {
       }
     );
   }
+=======
+>>>>>>> b6b70e6347c8fd052fcd0081678117c54212c5e8
 }
